@@ -930,11 +930,11 @@
 // // Sample Output :
 // // 2 4
 // // 1 3
-// // Getting input via STDIN
+// Getting input via STDIN
 // const readline = require("readline");
 
 // const inp = readline.createInterface({
-//   input: process.stdin,
+//   input: process.stdin
 // });
 
 // const userInput = [];
@@ -944,26 +944,24 @@
 // });
 
 // inp.on("close", () => {
-//   const numberStr = userInput[0]; // Example: "535225324"
+//   const numberStr = userInput[0].split('');
 
 //   let even = [];
 //   let odd = [];
 
-//   for (let i = 0; i < numberStr.length; i++) {
-//     const digit = parseInt(numberStr[i]);
+//   for(let i = 0; i<numberStr.length; i++){
+//       if(numberStr[i]==0){
 
-//     if (digit % 2 === 0) {
-//       even.push(digit);
-//     } else {
-//       odd.push(digit);
-//     }
+//       }else if(numberStr[i] % 2 == 0){
+//           even.push(numberStr[i]);
+//       }else{
+//           odd.push(numberStr[i])
+//       }
 //   }
 
-//   even.sort((a, b) => a - b);
-//   odd.sort((a, b) => a - b);
+//   console.log(even.sort().join(" "))
+//   console.log(odd.sort().join(" "))
 
-//   console.log(even.join(" "));
-//   console.log(odd.join(" "));
 // });
 
 // //23
@@ -1263,11 +1261,11 @@
 // // 124
 // // Sample Output :
 // // 7
-// // Getting input via STDIN
+// Getting input via STDIN
 // const readline = require("readline");
 
 // const inp = readline.createInterface({
-//   input: process.stdin,
+//   input: process.stdin
 // });
 
 // const userInput = [];
@@ -1280,17 +1278,16 @@
 //   //start-here
 //   //Your code goes here … replace the below line with your code logic
 
-//   const numStr = userInput[0];
-//   let sum = 0;
+//  const numStr = userInput[0];
+//  let sum = 0;
 
-//   for (let i = 0; i < numStr.length; i++) {
-//     sum += parseInt(numStr[i]);
-//   }
+// for (let i = 0; i < numStr.length; i++) {
+//   sum += parseInt(numStr[i]);
+// }
 
-//   console.log(sum);
+// console.log(sum);
 //   //end-here
 // });
-
 // //30
 // // Write a program to get a string as input and reverse the string without using temporary variable.
 
