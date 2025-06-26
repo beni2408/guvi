@@ -111,3 +111,6 @@ let a = 14;
 if (true) {
   console.log("inside", a);
 }
+
+const ample = 5;
+console.log(ample);
