@@ -37,9 +37,32 @@ img {
 }
 
 #atomic {
-  background-color: rgb(255, 136, 136);
 }
 
 #daily {
-  background-color: antiquewhite;
+}
+
+a:hover {
+  list-style: none;
+  background-color: brown;
+  color: blanchedalmond;
+}
+
+a:link {
+  list-style: none;
+  color: brown;
+}
+a:visited {
+  list-style: none;
+  color: green;
+}
+
+a:visited:hover {
+  list-style: none;
+  background-color: brown;
+  color: blanchedalmond;
+}
+a:active {
+  list-style: none;
+  color: yellow;
 }
