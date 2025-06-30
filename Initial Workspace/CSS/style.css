@@ -1,3 +1,45 @@
-div {
-  color: maroon;
+.card-div {
+  border: 1px solid black;
+  margin: 10px;
+  width: 200px;
+  padding: 10px;
+  height: 50vh;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+.card-para {
+  font-size: small;
+  padding: 10px;
+}
+.buy-btn {
+  border: none;
+  background-color: rgb(47, 177, 0);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.later-btn {
+  border: none;
+  background-color: rgb(205, 2, 2);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#atomic {
+  background-color: rgb(255, 136, 136);
+}
+
+#daily {
+  background-color: antiquewhite;
 }
