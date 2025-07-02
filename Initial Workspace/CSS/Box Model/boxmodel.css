@@ -14,3 +14,45 @@
   padding-top: 10px;
   margin: 30px;
 }
+
+.parent {
+  width: 500px;
+  height: 700px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.static {
+  background-color: yellow;
+  position: static;
+}
+.absolute {
+  background-color: brown;
+  position: absolute;
+  top: 0;
+}
+.relative {
+  background-color: green;
+  position: relative;
+  top: 0;
+  left: 50px;
+}
+.sticky {
+  background-color: red;
+  position: sticky;
+  top: 0;
+  left: 50px;
+}
+.fixed {
+  background-color: purple;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+}
