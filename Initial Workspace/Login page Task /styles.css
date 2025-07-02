@@ -7,15 +7,28 @@
   align-items: center;
   justify-content: center;
   padding: 100px;
-  background-color: bisque;
+  background-image: linear-gradient(skyblue, rgb(11, 11, 82));
   margin: 250px 400px;
   border-radius: 50px;
 }
-.fields {
-  font-size: larger;
-  text-align: center;
+.logdetais {
+  align-items: center;
+  padding-left: 150px;
+  justify-content: center;
 }
+
 .image {
   width: 500px;
   height: 100px;
+  padding-bottom: 50px;
+}
+.buttons {
+  align-items: center;
+  padding-left: 150px;
+}
+.save-btn {
+  font-size: 20px;
+}
+.clear-btn {
+  font-size: 20px;
 }

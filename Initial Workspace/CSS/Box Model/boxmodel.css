@@ -10,6 +10,7 @@
   /* background-color: blueviolet; */
   /* background-image: linear-gradient(to-botoom, pink, red, rgb(168, 17, 0)); */
   background-image: radial-gradient(pink, red, rgb(168, 17, 0));
-  padding: 20px;
+  /* padding: 20px; */
+  padding-top: 10px;
   margin: 30px;
 }
