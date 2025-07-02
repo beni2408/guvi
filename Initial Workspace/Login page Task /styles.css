@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background-color: bisque;
+  margin: 250px 400px;
+  border-radius: 50px;
+}
+.fields {
+  font-size: larger;
+  text-align: center;
+}
+.image {
+  width: 500px;
+  height: 100px;
+}
