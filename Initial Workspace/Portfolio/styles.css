@@ -13,27 +13,32 @@
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid var(--font-color);
+  padding: 15px;
   position: static;
-  bottom: 0;
-  padding: 10px;
-  width: 100%;
 
+  width: 90%;
+  position: fixed;
   gap: 1rem;
   font-size: 20px;
   font-weight: 700;
   margin: 0 auto;
+  bottom: 0;
+  top: auto;
   cursor: pointer;
   color: #e50914;
 }
 
 li {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column-reverse; */
   justify-content: center;
   gap: 5px;
+}
+
+li:hover {
+  color: #3c3233;
 }
 
 @media (min-width: 720px) {
@@ -43,6 +48,7 @@ li {
   ul {
     justify-content: end;
     font-size: 20px;
+    top: 0;
   }
 
   li:hover {
