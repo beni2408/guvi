@@ -5,22 +5,27 @@
   --font-family: "Poppins", sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: #ffffff;
   font-family: var(--font-family);
   scroll-behavior: smooth;
 }
-
+a {
+  text-decoration: none;
+  color: #e50914;
+}
 ul {
   list-style-type: none;
   z-index: 999;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px;
-
+  padding: 15px;
   font-size: 15px;
   gap: 2rem;
   font-weight: 500;
@@ -38,69 +43,31 @@ li > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
 }
 
 li:hover {
+  border: none;
   color: #3c3233;
+}
+img {
+  object-fit: contain;
 }
 
 .section {
-  width: 100vw;
+  width: 90vw;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: larger;
-
-  flex-direction: row;
 }
 .all-sections {
   margin-bottom: 50px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.home-layout {
-  width: 300px;
-  height: 90vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-}
-
-.h-c {
-  border: 1px solid black;
-}
-
-.image-content {
-  width: 100%;
-  height: 40vh;
-}
-.head-name {
-  width: 100%;
-  height: 10vh;
-  display: grid;
-  place-items: center;
-}
-
-.content-sec {
-  width: 100%;
-  height: 20vh;
-}
-
-.util-box {
-  width: 10%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  padding: 12px;
 }
 
 .home-layout {
@@ -115,16 +82,16 @@ a {
 .left-content {
   width: 100%;
 }
-
 .right-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  text-align: justify;
 }
 
 .image-content > img {
   width: 100%;
-  height: 50vh;
+  height: 30vh;
 }
 
 .head-name {
@@ -132,6 +99,33 @@ a {
   display: grid;
   place-items: center;
   font-size: 50px;
+  font-weight: bolder;
+  color: #e50914;
+}
+
+.content-sec {
+  height: 20vh;
+}
+
+.icon-logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+}
+.util-box {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media (min-width: 720px) {
