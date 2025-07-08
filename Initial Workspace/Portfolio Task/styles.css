@@ -15,6 +15,7 @@
 
 ul {
   list-style-type: none;
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,7 +33,7 @@ ul {
   color: #e50914;
 }
 
-li {
+li > a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,12 +95,43 @@ a {
 }
 
 .util-box {
-  width: 100%;
+  width: 10%;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.home-layout {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.left-content {
+  width: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-content > img {
+  width: 100%;
+  height: 50vh;
+}
+
+.head-name {
+  height: 5vh;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
 }
 
 @media (min-width: 720px) {
@@ -124,5 +156,13 @@ a {
   }
   .section {
     height: 80vh;
+  }
+  .home-layout {
+    flex-direction: row;
+  }
+
+  .content-sec {
+    font-size: 20px;
+    width: 500px;
   }
 }
