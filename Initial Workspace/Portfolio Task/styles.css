@@ -10,6 +10,7 @@
   margin: 0;
   background-color: #ffffff;
   font-family: var(--font-family);
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -51,6 +52,14 @@ li:hover {
   justify-content: center;
   align-items: center;
   font-size: larger;
+}
+.all-sections {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 720px) {
