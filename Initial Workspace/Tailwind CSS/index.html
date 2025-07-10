@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {},
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1 class="text-blue-800 text-3xl font-bold underline">Hello World</h1>
+    <button class="bg-orange-400 p-2 m-2 w-40 rounded-lg text-white">
+      Save
+    </button>
+    <button class="btn btn"></button>
+    <button
+      class="ease-linear transform hover:scale-125 transition duration-500 bg-teal-400 px-6 py-2 m-6 inline"
+    >
+      Hover linear
+    </button>
+    <button
+      class="ease-in transform hover:scale-125 transition duration-500 bg-teal-400 px-6 py-2 m-6 inline"
+    >
+      Hover in
+    </button>
+    <button
+      class="ease-out transform hover:scale-125 transition duration-500 bg-teal-400 px-6 py-2 m-6 inline"
+    >
+      Hover out
+    </button>
+    <button
+      class="ease-in-out transform hover:scale-125 transition duration-500 bg-teal-400 px-6 py-2 m-6 inline"
+    >
+      Hover in out
+    </button>
+    Preview
+    <h1></h1>
+    <div class="box-border size-32 bg-whiteborder-4 p-4 ..."></div>
+  </body>
 </html>
