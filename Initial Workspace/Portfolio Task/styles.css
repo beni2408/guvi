@@ -50,18 +50,18 @@ li:hover {
   color: #3c3233;
 }
 img {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .section {
-  width: 90vw;
+  /* width: 90vw; */
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: larger;
 }
-.all-sections {
+.section .all-sections {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
