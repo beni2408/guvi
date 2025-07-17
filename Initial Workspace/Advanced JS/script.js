@@ -58,3 +58,20 @@ const styleObj = {
 //         for
 //     }
 // }
+
+let newContainer = document.createElement("div");
+newContainer.setAttribute("class", "newelement");
+newContainer.innerText = "New Element";
+console.log(newContainer);
+
+let anchorelement = document.createElement("a");
+anchorelement.setAttribute("href", "https://google.com");
+anchorelement.setAttribute("target", "_blank");
+anchorelement.innerText = "Google";
+//append child - older one ES5
+//returns that child and also only one element can be added
+// document.body.appendCshild(newContainer);
+// document.body.appendChild(anchorelement);
+//append method
+//nothing is retruned undefined will be returned. Multiple nodes can be used in a single append
+document.body.append(newContainer, anchorelement);
