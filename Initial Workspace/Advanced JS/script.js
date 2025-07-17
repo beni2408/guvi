@@ -74,4 +74,14 @@ anchorelement.innerText = "Google";
 // document.body.appendChild(anchorelement);
 //append method
 //nothing is retruned undefined will be returned. Multiple nodes can be used in a single append
-document.body.append(newContainer, anchorelement);
+
+let imageElement = document.createElement("img");
+imageElement.setAttribute(
+  "src",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
+);
+
+imageElement.style.width = "100px";
+imageElement.style.height = "100px";
+
+document.body.append(newContainer, anchorelement, imageElement);
