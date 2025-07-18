@@ -138,3 +138,35 @@ sampleFunC("method 3", () => {
     "Function called using emplty arrow function inside the argument"
   );
 });
+
+// window.addEventListener("mouseover", () => {
+//   console.log("event got triggered");
+// });
+// window.addEventListener("mousedwon", () => {
+//   console.log("event got triggered - mouse down");
+// });
+// window.addEventListener("mouseup", () => {
+//   console.log("event got triggered - mouse up");
+// });
+
+const myForm = document.querySelector("form");
+myForm.addEventListener("input", (e) => {
+  e.preventDefault();
+  console.log("input has been triggered", e.target.value);
+});
+
+//hey evenes (keypress, keydown, keyup)
+document.addEventListener("keydown", (e) => {
+  console.log("Key Event has been triggered", e.key);
+});
+
+// window events - (load,resize)
+window.addEventListener("resize", (e) => {
+  console.log(
+    "Page resized",
+    "Height : ",
+    e.target.innerHeight,
+    "width :",
+    e.target.innerWidth
+  );
+});
