@@ -103,3 +103,38 @@ function toggleEvent() {
 toggleBTN.addEventListener("click", () => {
   toggleEvent();
 });
+
+function getAndInvoke(nameofFN, fn) {
+  console.log(nameofFN);
+  fn();
+}
+function someFn(name) {
+  console.log("SomeFn is called", name);
+}
+getAndInvoke("tickFN", () => {
+  someFn("jascar");
+});
+
+function sampleFunC(name, fn) {
+  console.log(name);
+  fn();
+}
+
+const func = () => {
+  console.log(
+    "Function called successfully using arrow function method using another variable to store the arrow function inside the argument"
+  );
+};
+sampleFunC("method 1", func);
+
+sampleFunC("method 2", function call() {
+  console.log(
+    "Calling the function using normal function method where the function called usually inside the argument"
+  );
+});
+
+sampleFunC("method 3", () => {
+  console.log(
+    "Function called using emplty arrow function inside the argument"
+  );
+});
