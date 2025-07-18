@@ -85,3 +85,21 @@ imageElement.style.width = "100px";
 imageElement.style.height = "100px";
 
 document.body.append(newContainer, anchorelement, imageElement);
+
+const inputElement = document.querySelector("input");
+inputElement.setAttribute("type", "password");
+const toggleBTN = document.querySelector("#pass-check");
+
+function toggleEvent() {
+  const inputType = inputElement.getAttribute("type");
+  if (inputType == "password") {
+    inputElement.setAttribute("type", "text");
+    toggleBTN.innerText = "Hide";
+  } else {
+    inputElement.setAttribute("type", "password");
+    toggleBTN.innerText = "Show";
+  }
+}
+toggleBTN.addEventListener("click", () => {
+  toggleEvent();
+});
