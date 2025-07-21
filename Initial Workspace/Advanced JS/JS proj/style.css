@@ -1,0 +1,12 @@
+/* * {
+  background-color: antiquewhite;
+} */
+
+#form-box {
+  /* margin: 0 auto; */
+
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  background-color: rgb(255, 255, 255);
+}
