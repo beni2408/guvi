@@ -76,52 +76,107 @@
 //PROMISES
 
 // producer - we can producer a promiser
-function createData(name, Age) {
-  return new Promise((res, rej) => {
+// function createData(name, Age) {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       if (Age > 30) {
+//         rej({ error: "Rejected your request" });
+//       } else {
+//         res({ name, Age });
+//       }
+//     }, 2000);
+//   });
+// }
+// let DB = [{ name: "Praveen", age: "22" }];
+// function pushToDb(data) {
+//   return new Promise((res, rej) => {
+//     if (data.name == "Praveen") {
+//       rej({ Error: "User already exist" });
+//     } else {
+//       DB.push(data);
+//       res(DB);
+//     }
+//   });
+//   DB.push(data);
+//   return DB;
+// }
+
+// // Consumer
+// console.log("Started");
+// createData("Jascar", 22)
+//   .then((data) => {
+//     console.log(data);
+//     return data;
+//   })
+//   .then((data2) => {
+//     return pushToDb(data2);
+//   })
+//   .then((data3) => {
+//     return createData("Praveen", 21);
+//   })
+//   .then((data4) => {
+//     console.log(data4);
+//     return pushToDb(data4);
+//   })
+//   .then((data5) => {
+//     console.log(data5);
+//   })
+
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// own practice
+function getData(name, course) {
+  return new Promise((respond, reject) => {
     setTimeout(() => {
-      if (Age > 30) {
-        rej({ error: "Rejected your request" });
+      if (course == "CSE" || course == "cse") {
+        reject({ Error: "No Computer Science Course is available" });
       } else {
-        res({ name, Age });
+        respond({ name, course });
       }
     }, 2000);
   });
 }
-let DB = [{ name: "Praveen", age: "22" }];
-function pushToDb(data) {
-  return new Promise((res, rej) => {
-    if (data.name == "Praveen") {
-      rej({ Error: "User already exist" });
+
+let database = [{ name: "Fedora", course: "CSE" }];
+function databaseCorrector(data) {
+  return new Promise((respond, reject) => {
+    if (data.name == "fedora") {
+      reject({ Error: "Duplicate value" });
     } else {
-      DB.push(data);
-      res(DB);
+      database.push(data);
+      respond(database);
     }
   });
-  DB.push(data);
-  return DB;
 }
 
-// Consumer
-console.log("Started");
-createData("Jascar", 22)
+console.log("started");
+getData("jascar", "BioTech")
   .then((data) => {
     console.log(data);
     return data;
   })
+  .then((data1) => {
+    return databaseCorrector(data1);
+    return data1;
+  })
   .then((data2) => {
-    return pushToDb(data2);
+    console.log(database);
   })
   .then((data3) => {
-    return createData("Praveen", 21);
+    return getData("Rohan", "MEchanical");
   })
   .then((data4) => {
+    return databaseCorrector(data4);
     console.log(data4);
-    return pushToDb(data4);
   })
   .then((data5) => {
     console.log(data5);
   })
-
+  .then((data6) => {
+    return getData("Sam Leo", "CSE");
+  })
   .catch((err) => {
     console.log(err);
   });
