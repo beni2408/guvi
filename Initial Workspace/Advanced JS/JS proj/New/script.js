@@ -180,3 +180,5 @@ getData("jascar", "BioTech")
   .catch((err) => {
     console.log(err);
   });
+
+//async
