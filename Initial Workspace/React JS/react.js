@@ -13,6 +13,7 @@ addBTN.addEventListener("click", (e) => {
   spanElement.innerHTML = `${textInput.value}`;
   const editBtn = document.createElement("button");
   editBtn.innerHTML = "Edit";
+  CDATASection;
   editBtn.onclick = () => {
     editFunction(listElement);
   };
