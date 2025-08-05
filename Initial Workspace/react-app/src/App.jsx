@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const data = [
@@ -115,9 +115,10 @@ const data = [
 function App() {
   return (
     <>
+      <Button name={"Count"} variant={"Course"}></Button>
       <div className="all-card">
         {data.map((course, idx) => (
-          <GuviCard courseDetails={course} />
+          <GuviCard courseDetails={course} key={idx} />
         ))}
       </div>
     </>
@@ -129,9 +130,18 @@ export default App;
 function Button({ name, variant }) {
   //let props = {name : "save", variant="btn btn-sucess"}
   //let {name, varaint} = props
+
+  const [count, setCount] = useState(0); //any values can be stored for initial value
   return (
     <div id="my-btn">
-      <button className={variant}>{name}</button>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+        className={variant}
+      >
+        {name} {count}
+      </button>
     </div>
   );
 }
