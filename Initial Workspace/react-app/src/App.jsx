@@ -146,6 +146,35 @@ function Button({ name, variant }) {
   );
 }
 
+function AcceptButton() {
+  const [accepted, SetStatus] = useState("Status not recieved");
+  return (
+    <div id="acceptdiv">
+      <button
+        onClick={() => {
+          {
+            SetStatus("Accepted");
+          }
+        }}
+      >
+        {"Accept"}
+      </button>
+
+      <button
+        onClick={() => {
+          SetStatus("Rejected");
+        }}
+        className="accrejbtn"
+      >
+        {"Reject"}
+      </button>
+      <div>
+        <p>{accepted}</p>
+      </div>
+    </div>
+  );
+}
+
 function GuviCard({ courseDetails }) {
   function convertEpochToTime(epoch) {
     let milliseconds = epoch * 1000;
@@ -200,6 +229,7 @@ function Bottomcard({ getType, courseDetails }) {
     <div className="flex-row">
       <div>{getType(courseDetails.type)} </div>
       <div>{courseDetails.students}</div>
+      <div>{AcceptButton()}</div>
     </div>
   );
 }
