@@ -1,38 +1,63 @@
-html {
-  background-color: #213547;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
-
 .btn {
-  color: rgb(255, 255, 255);
-  background-color: #1a1a1a;
+  color: black;
+  background-color: bisque;
   padding: 5px;
   border-radius: 5px;
-  gap: 10px;
+  margin: 10px;
+}
+.btn-accent {
+  background-color: rgb(92, 73, 175);
+  color: black;
+}
+.btn-sucess {
+  background-color: teal;
+  color: white;
+}
+.btn-error {
+  background-color: crimson;
+  color: black;
 }
 
-.div {
-  gap: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  background-color: beige;
-  justify-content: center;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  color: #5e7087;
+}
+.guvi-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 200px;
-  padding: 10px;
-  /* box-shadow: 0px, white; */
-}
-
-.input {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
   border-radius: 10px;
-  width: 200px;
-  height: 30px;
+  background-color: #fff;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
-label {
-  color: #1a1a1a;
-  font-weight: bold;
-  font-size: 20px;
+.guvi-card:hover {
+  border: 1px solid blue;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
