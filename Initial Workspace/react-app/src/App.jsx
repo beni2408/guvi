@@ -150,24 +150,26 @@ function AcceptButton() {
   const [accepted, SetStatus] = useState("Status not recieved");
   return (
     <div id="acceptdiv">
-      <button
-        onClick={() => {
-          {
-            SetStatus("Accepted");
-          }
-        }}
-      >
-        {"Accept"}
-      </button>
+      <div className="flex-col">
+        <button
+          onClick={() => {
+            {
+              SetStatus("Attended");
+            }
+          }}
+        >
+          {"Accept"}
+        </button>
 
-      <button
-        onClick={() => {
-          SetStatus("Rejected");
-        }}
-        className="accrejbtn"
-      >
-        {"Reject"}
-      </button>
+        <button
+          onClick={() => {
+            SetStatus("Rejected");
+          }}
+          className="accrejbtn"
+        >
+          {"Reject"}
+        </button>
+      </div>
       <div>
         <p>{accepted}</p>
       </div>
