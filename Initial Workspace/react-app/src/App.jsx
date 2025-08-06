@@ -222,6 +222,7 @@ function MiddleContent({ courseDetails }) {
       <h3>{courseDetails.name}</h3>
       <div style={{ color: "#5e7087" }}>{courseDetails.course.name}</div>
       <div style={{ color: "#5e7087" }}>{courseDetails.language}</div>
+      <div>{AcceptButton()}</div>
     </div>
   );
 }
@@ -231,7 +232,13 @@ function Bottomcard({ getType, courseDetails }) {
     <div className="flex-row">
       <div>{getType(courseDetails.type)} </div>
       <div>{courseDetails.students}</div>
-      <div>{AcceptButton()}</div>
     </div>
   );
 }
+
+// const acceptedno = (AcceptButton.accepted == "Accepted").length;
+// const _ACCEPTED_NO = AcceptButton.filter(
+//   (accepted) => accepted === "Accepted"
+// ).length;
+
+// const noofAccepted = AcceptButton.accepted.length;
